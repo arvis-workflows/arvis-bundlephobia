@@ -1,0 +1,32 @@
+{
+  "name": "arvis-bundlephobia",
+  "version": "0.0.2",
+  "description": "Arvis workflow to find a JavaScript bundle size",
+  "license": "MIT",
+  "author": {
+    "name": "Prashant Palikhe",
+    "email": "prashpal09@gmail.com"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "postinstall": "arvish-init",
+    "preuninstall": "arvish-cleanup",
+    "prepublishOnly": "arvish-prepublish"
+  },
+  "files": [
+    "index.js",
+    "util.js",
+    "icon.png",
+    "arvis-workflow.json"
+  ],
+  "keywords": [
+    "arvis",
+    "workflow",
+    "arvish"
+  ],
+  "dependencies": {
+    "arvish": ">=0.5.7"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/workflow-schema.json",
+  "defaultIcon": "icon.png",
+  "category": "Productivity",
+  "name": "arvis-bundlephobia",
+  "readme": "",
+  "creator": "Prashant Palikhe",
+  "description": "Arvis workflow to find a JavaScript bundle size",
+  "version": "0.0.2",
+  "webAddress": "https://github.com/arvis-workflows/arvis-bundlephobia",
+  "enabled": true,
+  "commands": [
+    {
+      "type": "scriptFilter",
+      "title": "Find a JavaScript bundle size",
+      "command": "bundlephobia",
+      "scriptFilter": "node index.js {query}",
+      "runningSubtext": "Hold on a sec until script work is done...",
+      "argType": "required",
+      "withspace": true,
+      "actions": [
+        {
+          "type": "open",
+          "modifiers": "normal",
+          "target": "{query}"
+        }
+      ]
+    }
+  ]
+}
