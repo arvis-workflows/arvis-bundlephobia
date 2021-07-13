@@ -1,6 +1,6 @@
 # arvis-bundlephobia
 
-> arvis workflow to find a JavaScript bundle size
+> Arvis workflow to find a JavaScript bundle size
 
 <img src="arvis-bundlephobia.gif" width="895">
 
